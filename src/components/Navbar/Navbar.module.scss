@@ -1,0 +1,75 @@
+.nav_main {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.nav_wrapper {
+  width: 1440px;
+}
+.header_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 72px;
+  margin-bottom: -126px;
+  position: relative;
+
+  .tn_logo {
+    width: 50%;
+    z-index: 1;
+  }
+
+  .logo {
+    display: flex;
+    // z-index: 1;
+    background: transparent;
+  }
+
+  .right_section {
+    display: flex;
+    gap: 48px;
+    z-index: 1;
+
+    .language_switcher {
+      display: flex;
+      gap: 18px;
+    }
+    .menu {
+      display: flex;
+      gap: 8px;
+
+      img {
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+// @media (max-width: 375px) {
+@media (max-width: 768px) {
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    // width: 768px;
+  }
+  .tn_logo {
+    display: flex;
+    z-index: 1;
+  }
+
+  .logo {
+    display: flex;
+    // z-index: 1;
+    background: transparent;
+  }
+
+  .language_switcher p {
+    display: none;
+  }
+  .menu p {
+    display: none;
+  }
+}

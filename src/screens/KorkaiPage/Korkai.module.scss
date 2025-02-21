@@ -1,0 +1,188 @@
+.korkai_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.korkai_background {
+  display: flex;
+  //   width: 100%;
+  justify-content: space-between;
+  //   background-color: #1c1818;
+}
+.korkai_map {
+  position: absolute;
+  width: 112px;
+  height: 65.59130859375px;
+  top: 218.6px;
+  left: 476.05px;
+  overflow-y: hidden;
+}
+.korkai_content {
+  margin-top: 497.09px;
+  width: 620px;
+  //   height: 206px;
+  margin-left: 60.16px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #8f6a44;
+  font-family: Behind The Nineties;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 95px;
+  font-size: 120px;
+  gap: 32px;
+
+  p {
+    overflow-y: hidden;
+  }
+}
+.korkai_content_year {
+  line-height: 100.84px;
+  font-size: 64px;
+}
+.korkai_background_image1 {
+  position: absolute;
+  right: 0;
+  top: 208px;
+  //   left: 856.35px;
+
+  width: 584px;
+  height: 816px;
+}
+.textContent {
+  width: 576.003px;
+  height: 408px;
+  top: 1003.68px;
+  left: 76.3px;
+  gap: 32px;
+  margin-top: 180px;
+  padding-left: 76.3px;
+
+  .textContent_title {
+    font-family: Behind The Nineties;
+    width: 576.0037841796875px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    color: #8f6f44;
+    overflow-y: hidden;
+  }
+  .textContent_text {
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 4%;
+    color: #1c1818;
+    overflow-y: hidden;
+  }
+}
+.korkai_aerila {
+  margin-top: 170px;
+}
+.burial_goods {
+  margin-top: 194px;
+  margin-left: 118.81px;
+  font-family: Behind The Nineties;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 104px;
+  letter-spacing: 0%;
+  color: #8f6a44;
+
+  p {
+    overflow-y: hidden;
+  }
+
+  span {
+    font-style: italic;
+  }
+}
+.object_goods {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 61px;
+
+  .object_goods_model {
+    width: 655.98828125px;
+    height: 734.41259765625px;
+    margin-left: 118.5px;
+    // background-color: #8f6a44;
+  }
+
+  p {
+    overflow-y: hidden;
+    width: 432px;
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 4%;
+    color: #1c1818;
+
+    //test
+    margin-right: 30px;
+  }
+}
+
+.recoverd_necklace {
+  display: flex;
+  margin-top: 143px;
+  justify-content: space-around;
+
+  .necklace_text {
+    margin-top: 60px;
+  }
+
+  p {
+    width: 432px;
+    height: 512 px;
+    left: 217.44px;
+    gap: 32px;
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 4%;
+    color: #1c1818;
+    margin-bottom: 20px;
+  }
+}
+.necklace2 {
+  width: 592.0078125px;
+  height: 564.45263671875px;
+  margin-left: 121.99px;
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: 75px;
+  }
+}
+.behind_excavation {
+  margin-top: 130px;
+}
+.four_legged_jar {
+  font-family: Behind The Nineties;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 104px;
+  letter-spacing: 0%;
+  color: #8f6a44;
+  margin-top: 220px;
+  margin-left: 118.81px;
+}
+.four_legged_jar_images {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 112.85px;
+  margin-right: 112.85px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 120px;
+}
