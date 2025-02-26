@@ -1,10 +1,12 @@
-.nav_main {
-  width: 100%;
-  display: grid;
-  place-content: center;
-}
+// .nav_main {
+//   width: 100%;
+//   display: grid;
+//   place-content: center;
+// }
 .nav_wrapper {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
+  
 }
 .header_container {
   width: 100%;
@@ -46,6 +48,17 @@
   }
 }
 
+
+@media (min-width: 1441px) {
+  .nav_main {
+    width: 100%;
+    display: grid;
+    place-content: center;
+  }
+  .nav_wrapper {
+    width: 1440px;
+  }
+}
 // @media (max-width: 375px) {
 @media (max-width: 768px) {
   .header_container {
@@ -54,6 +67,7 @@
     align-items: center;
     padding: 16px 20px;
     // width: 768px;
+    margin-bottom: 0;
   }
   .tn_logo {
     display: flex;
