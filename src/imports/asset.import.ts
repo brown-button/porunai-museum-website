@@ -26,6 +26,10 @@ import korkai_areial from "../assets/icons/Korkai_Aerial.svg"
 import korkai_struct from "../assets/icons/korkai_struct.svg"
 import model4_dummy from "../assets/icons/model4_dummy.svg"
 import korkai_storage from "../assets/icons/korkai_storage.svg"
+import korkai_map from "../assets/icons/korkai_map.svg"
+import adichanallur_map from "../assets/icons/adichanallur_map.svg"
+import sivagalai_map from "../assets/icons/sivagalai_map.svg"
+import than_porunai_img from "../assets/icons/than_porunai_img.svg"
 
 const Assets = {
     tn_logo,
@@ -55,7 +59,11 @@ const Assets = {
     korkai_areial,
     korkai_struct,
     model4_dummy,
-    korkai_storage
+    korkai_storage,
+    korkai_map,
+    adichanallur_map,
+    sivagalai_map,
+    than_porunai_img
 
 };
 

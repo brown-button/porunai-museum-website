@@ -22,6 +22,7 @@
     z-index: 10;
     position: relative;
     background-repeat: no-repeat;
+    // animation: fadeIn 1.5s ease-out forwards;
   }
 
   .titile_container {
@@ -177,8 +178,7 @@
         // margin-top: 10px;
         // height: fit-content;
         height: 600px;
-      max-width: 200px;
-
+        max-width: 200px;
       }
     }
     .rotate_container {
@@ -307,9 +307,76 @@
       background: transparent;
     }
   }
+
+  .elakkiyangal_container {
+    margin-top: 210px;
+    h1 {
+      font-family: TAU-Nilavu;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #8f6f44;
+    }
+    .play_section {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: center;
+
+      p {
+        font-family: TAU-Paalai;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #000000;
+      }
+    }
+    .elakkiyangal_content {
+      display: flex;
+      justify-content: space-between;
+      padding: 80px;
+      margin-top: 40px;
+
+      .elakkiyangal {
+        max-width: 637px;
+        width: 100%;
+
+        p {
+          font-family: Avenir;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 36px;
+          letter-spacing: 1%;
+          color: #1c1818;
+        }
+        h2 {
+          margin: 30px 0px;
+          font-family: TAU-Nilavu;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 32px;
+          line-height: 48px;
+          letter-spacing: 1%;
+          color: #1c1818;
+        }
+      }
+
+      img {
+        max-width: 469px;
+        width: 100%;
+      }
+    }
+  }
   .adichanallur_container {
     width: 100%;
-    margin-top: 300px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -456,6 +523,10 @@
     display: flex;
     justify-content: space-around;
     margin-top: 106px;
+    margin-bottom: -520px;
+    background: transparent;
+    position: relative;
+    z-index: 1;
 
     .beta_img_contain {
       max-width: 511px;
@@ -538,6 +609,17 @@
     }
   }
 
+  .sivagalai_map_container {
+    max-width: 1440px;
+    width: 100%;
+    margin-bottom: -783px;
+
+    .sivagalai_map {
+      max-width: 1440px;
+      width: 100%;
+    }
+  }
+
   .model3_content {
     // height: 700px;
     position: relative;
@@ -558,10 +640,10 @@
       position: absolute;
       // bottom: 250px;
       // left: 300px;
-      
+
       top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+      left: 60%;
+      transform: translate(-50%, -50%);
       background: transparent;
       h1 {
         font-family: TAU-Paalai;
@@ -585,7 +667,7 @@
       }
     }
   }
-  .important_findings_container_wrapper{
+  .important_findings_container_wrapper {
     display: flex;
     justify-content: end;
     padding: 0px 50px;
@@ -607,7 +689,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
-  
+
         .important_findings_items {
           max-width: 305px;
           width: 100%;
@@ -632,9 +714,7 @@
         }
       }
     }
-
   }
-  
 
   .findings_below_container {
     margin-top: 30px;
@@ -643,12 +723,21 @@
     justify-content: end;
     margin-right: 50px;
 
-    img{
+    img {
       max-width: 584px;
       width: 100%;
     }
   }
+  .korkai_map_container {
+    max-width: 1440px;
+    width: 100%;
+    margin-bottom: -520px;
 
+    img {
+      max-width: 1440px;
+      width: 100%;
+    }
+  }
   .korkai_text_content {
     margin-top: 80px;
     width: 648px;
@@ -705,7 +794,6 @@
     display: flex;
     justify-content: flex-end;
     .model4 {
-     
       max-width: 700px;
       width: 100%;
       // position: absolute;
@@ -720,7 +808,7 @@
       position: absolute;
       bottom: 250px;
       left: 513px;
-     
+
       h1 {
         font-family: TAU-Paalai;
         font-weight: 400;
@@ -782,19 +870,17 @@
         color: #1c1818;
       }
     }
-    .korkai_storage{
+    .korkai_storage {
       max-width: 495px;
       width: 100%;
 
-      img{
+      img {
         max-width: 495px;
         width: 100%;
       }
     }
-    
   }
 
-  
   .view360deg_container {
     margin-top: 20px;
     max-width: 1440px;
@@ -803,7 +889,36 @@
       width: 100%;
       overflow: hidden;
     }
-  }  
+  }
+  .end {
+    padding: 0px 30px;
+
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      max-width: 1100px;
+      font-family: Avenir;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 32px;
+      line-height: 60px;
+      letter-spacing: 1%;
+      color: #221a0e;
+
+      span {
+        font-family: TAU-Nilavu Bold;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 96px;
+        line-height: 100px;
+        letter-spacing: 1%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1123,7 +1238,7 @@
         background: transparent;
         padding: 15px;
 
-        img{
+        img {
           max-width: 163px;
           width: 100%;
         }
@@ -1138,6 +1253,68 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: transparent;
+      }
+    }
+
+    .elakkiyangal_container {
+      margin-top: 70px;
+      h1 {
+        font-family: TAU-Nilavu;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 42px;
+        line-height: 72px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #8f6f44;
+      }
+      .play_section {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        justify-content: center;
+
+        p {
+          font-family: TAU-Paalai;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 20px;
+          line-height: 16px;
+          letter-spacing: 0%;
+          text-align: center;
+          color: #000000;
+        }
+      }
+      .elakkiyangal_content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 40px;
+
+        .elakkiyangal {
+          max-width: 637px;
+          width: 100%;
+
+          p {
+            font-family: Avenir;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            letter-spacing: 1%;
+            color: #1c1818;
+          }
+          h2 {
+            margin: 30px 0px;
+            font-family: TAU-Nilavu;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: 1%;
+            color: #1c1818;
+          }
+        }
       }
     }
 
@@ -1183,19 +1360,19 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
+
       .porunai_book {
         max-width: 269px;
         width: 100%;
         display: flex;
         margin-left: 0;
       }
-  
+
       .pot_content {
         max-width: 263px;
         width: 100%;
         margin-top: 30px;
-  
+
         .pot {
           width: 263px;
           // height: 571px;
@@ -1206,7 +1383,7 @@
           flex-direction: column;
           width: 200px;
           align-items: center;
-  
+
           h1 {
             font-family: Avenir;
             font-weight: 400;
@@ -1309,6 +1486,10 @@
       align-items: center;
       margin-top: 80px;
       row-gap: 55px;
+      margin-bottom: 0;
+      background: transparent;
+      position: relative;
+      z-index: 1;
 
       .beta_img_contain {
         max-width: 253px;
@@ -1377,6 +1558,19 @@
       }
     }
 
+    .sivagalai_map_container {
+      max-width: 501px;
+      width: 100%;
+      margin-bottom: 0;
+      max-height: 300px;
+      margin-top: -100px;
+
+      .sivagalai_map {
+        max-width: 581px;
+        width: 100%;
+      }
+    }
+
     .sivagalai_content {
       margin-top: 60px;
       max-width: 343px;
@@ -1410,12 +1604,11 @@
       flex-direction: column;
       align-items: center;
       margin-right: 0;
-      .model3_img{
+      .model3_img {
         width: 336px;
         height: 340px;
       }
       .model3 {
-        
       }
       .model3_content_text {
         width: 256px;
@@ -1451,7 +1644,7 @@
       }
     }
 
-    .important_findings_container_wrapper{
+    .important_findings_container_wrapper {
       margin-top: 40px;
       display: flex;
       align-items: center;
@@ -1475,33 +1668,32 @@
           display: flex;
           justify-content: space-between;
           margin-top: 20px;
-    
+
           .important_findings_items {
             max-width: 305px;
             width: 100%;
             h2 {
               font-family: TAU-Nilavu;
-font-weight: 400;
-font-style: italic;
-font-size: 61.89px;
-line-height: 66.21px;
-letter-spacing: 0%;
+              font-weight: 400;
+              font-style: italic;
+              font-size: 61.89px;
+              line-height: 66.21px;
+              letter-spacing: 0%;
               color: #8f6f44;
             }
             p {
               font-family: Avenir;
-font-weight: 400;
-font-style: italic;
-font-size: 12.38px;
-line-height: 20.63px;
-letter-spacing: 1%;
+              font-weight: 400;
+              font-style: italic;
+              font-size: 12.38px;
+              line-height: 20.63px;
+              letter-spacing: 1%;
 
               color: #1c1818;
             }
           }
         }
       }
-  
     }
 
     .findings_below_container {
@@ -1510,13 +1702,23 @@ letter-spacing: 1%;
       justify-content: center;
       margin-right: 0;
 
-      img{
+      img {
         max-width: 297px;
         width: 100%;
       }
     }
-   
-    .korkai_text_content_container{
+    .korkai_map_container {
+      max-width: 811px;
+      width: 100%;
+      margin-bottom: -115px;
+
+      img {
+        max-width: 811px;
+        width: 100%;
+      }
+    }
+
+    .korkai_text_content_container {
       display: flex;
       justify-content: center;
       .korkai_text_content {
@@ -1526,26 +1728,25 @@ letter-spacing: 1%;
         margin-left: 0;
         h1 {
           font-family: TAU-Nilavu;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 51.08px;
-  line-height: 38.31px;
-  letter-spacing: 0%;
-  
+          font-weight: 700;
+          font-style: italic;
+          font-size: 51.08px;
+          line-height: 38.31px;
+          letter-spacing: 0%;
+
           color: #8f6f44;
         }
         p {
           margin-top: 15px;
           font-family: Avenir;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 19.16px;
-  line-height: 34.06px;
-  letter-spacing: 1%;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 19.16px;
+          line-height: 34.06px;
+          letter-spacing: 1%;
           color: #1c1818;
         }
       }
-
     }
 
     .korkai_footer_content {
@@ -1557,27 +1758,25 @@ letter-spacing: 1%;
       margin-top: 30px;
       height: fit-content;
       row-gap: 20px;
-  
+
       .korkai_areial {
         max-width: 285px;
         margin-right: 0;
         position: static;
-        img{
+        img {
           max-width: 285px;
           width: 100%;
           right: 0;
         }
-       
       }
       .korkai_struct {
         position: static;
         max-width: 182px;
 
-        img{
+        img {
           max-width: 182px;
           width: 100%;
         }
-       
       }
     }
 
@@ -1593,7 +1792,6 @@ letter-spacing: 1%;
       align-items: center;
       row-gap: 30px;
       .model4 {
-       
         max-width: 300px;
         width: 100%;
         // position: absolute;
@@ -1608,7 +1806,7 @@ letter-spacing: 1%;
         position: static;
         bottom: 250px;
         left: 513px;
-       
+
         h1 {
           font-family: TAU-Paalai;
           font-weight: 400;
@@ -1637,29 +1835,29 @@ letter-spacing: 1%;
       flex-direction: column;
       row-gap: 40px;
       align-items: center;
-  
+
       .footer_text {
         max-width: 300px;
         width: 100%;
-  
+
         h1 {
           font-family: TAU-Nilavu;
           font-weight: 700;
           font-style: italic;
           font-size: 30.37px;
           line-height: 35.43px;
-          letter-spacing: 0%;          
+          letter-spacing: 0%;
           color: #8f6f44;
           margin-bottom: 10px;
         }
-  
+
         p {
           font-family: TAU-Nilavu;
           font-weight: 400;
           font-style: italic;
           font-size: 15.18px;
           line-height: 25.31px;
-          letter-spacing: 1%;          
+          letter-spacing: 1%;
           color: #1c1818;
         }
         ul {
@@ -1668,21 +1866,48 @@ letter-spacing: 1%;
           font-style: italic;
           font-size: 15.18px;
           line-height: 25.31px;
-          letter-spacing: 1%;          
+          letter-spacing: 1%;
           color: #1c1818;
         }
       }
-      .korkai_storage{
+      .korkai_storage {
         max-width: 285px;
         width: 100%;
-  
-        img{
+
+        img {
           max-width: 285px;
           width: 100%;
         }
       }
-      
     }
-  
+    .end {
+      padding: 0px 30px;
+
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        max-width: 1100px;
+        font-family: Avenir;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 1%;
+        color: #221a0e;
+
+        span {
+          font-family: TAU-Nilavu Bold;
+          font-weight: 700;
+          font-style: italic;
+          font-size: 46px;
+          line-height: 50px;
+          letter-spacing: 1%;
+        }
+      }
+    }
   }
 }

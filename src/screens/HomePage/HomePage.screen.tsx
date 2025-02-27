@@ -7,8 +7,19 @@ import TimelineCarousel from "components/swiper/Swiper.component";
 import Adichanallur_beta from "../../assets/images/Adichanallur - Burial.png";
 import view360deg from "../../assets/images/360_Image.jpg";
 import Babylon from "screens/Babylon/Babylon";
+import { useEffect, useRef, useState } from "react";
 
 const HomePage = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className={styles.main}>
       <div className={styles.home_container}>
@@ -29,16 +40,19 @@ const HomePage = () => {
               src={Assets.structure1}
               alt="background"
               className={styles.structure1}
+              style={{ transform: `translateY(${scrollY * 0.2}px)` }}
             />
             <img
               src={Assets.structure2}
               alt="background"
               className={styles.structure2}
+              style={{ transform: `translateY(${scrollY * 0.15}px)` }}
             />
             <img
               src={Assets.structure3}
               alt="background"
               className={styles.structure3}
+              style={{ transform: `translateY(${scrollY * 0.1}px)` }}
             />
           </div>
 
@@ -72,7 +86,13 @@ const HomePage = () => {
             </p>
           </div>
           <div className={styles.knife_container}>
-          <Babylon modelPath="/EMB_NAIL-KLD-7-1284.glb" scale={0.3}  className={styles.knife}  minZoom={4} maxZoom={8} />
+            <Babylon
+              modelPath="/EMB_NAIL-KLD-7-1284.glb"
+              scale={0.3}
+              className={styles.knife}
+              minZoom={4}
+              maxZoom={8}
+            />
             {/* <Canvas
               className={styles.knife}
               camera={{ position: [0, 0, 50], fov: 80 }}
@@ -91,7 +111,7 @@ const HomePage = () => {
                 // rotation={[Math.PI / 6, Math.PI / 4, 0]}
               />
               {/* <OrbitControls minDistance={5} maxDistance={15} /> */}
-              {/* <OrbitControls enableZoom={false} />
+            {/* <OrbitControls enableZoom={false} />
               <Environment preset="sunset" />
             </Canvas>  */}
           </div>
@@ -154,6 +174,36 @@ const HomePage = () => {
           />
         </div>
 
+        <div className={styles.elakkiyangal_container}>
+          <h1>இலக்கியங்களில் பொருநை</h1>
+          <section className={styles.play_section}>
+            <img src={Assets.play} alt="play" className={styles.play} />
+            <p>இந்த பகுதியை கேட்டறிக</p>
+          </section>
+
+          <div className={styles.elakkiyangal_content}>
+            <div className={styles.elakkiyangal}>
+              <p>
+                தாமிரபரணியின் பெருமையை நாம் பாடும் முன்னரே நமது மூதாதையர் சங்க
+                இலக்கியங்களில் பொருநை என்ற பெயரில் அதன் சிறப்பினை
+                அள்ளித்தெளித்திருக்கிறார்கள்.
+              </p>
+              <h2>
+                பொருநையின் வரலாறு சங்க இலக்கியங்களில்: ஆன் பொருநை தண் பொருநை
+                என்ற பெயர்களில் குறிப்பிடப்பட்டுள்ளது. 
+              </h2>
+              <p>கம்பர் முதல் பாரதி வரை பொருநையை பாடாதோரே இல்லை.</p>
+            </div>
+            <div>
+              <img
+                src={Assets.than_porunai_img}
+                alt="than porunai image"
+                className={styles.than_porunai_img}
+              />
+            </div>
+          </div>
+        </div>
+
         <div className={styles.adichanallur_container}>
           <h1>ஆதிச்சநல்லூர்</h1>
           <p>
@@ -173,8 +223,13 @@ const HomePage = () => {
           </div>
 
           <div className={styles.pot_content}>
-            <div  className={styles.pot}>
-            <Babylon modelPath="/EMB_IRON-KNIFE-AGR-1-67.glb" scale={1}   minZoom={4} maxZoom={8}/>
+            <div className={styles.pot}>
+              <Babylon
+                modelPath="/EMB_IRON-KNIFE-AGR-1-67.glb"
+                scale={1}
+                minZoom={4}
+                maxZoom={8}
+              />
               {/* <Canvas
                 className={styles.pot}
                 camera={{ position: [0, 0, 50], fov: 800 }}
@@ -213,26 +268,32 @@ const HomePage = () => {
 
         <div className={styles.old_iron_model_container}>
           <div className={styles.iron_model}>
-          <Babylon modelPath="/Obj8.glb" scale={1.2}  className={styles.iron}  minZoom={4} maxZoom={8}/>
+            <Babylon
+              modelPath="/Obj8.glb"
+              scale={1.2}
+              className={styles.iron}
+              minZoom={4}
+              maxZoom={8}
+            />
             {/* <Canvas
               className={styles.iron}
               camera={{ position: [0, 0, 50], fov: 50 }}
             >
               <ambientLight intensity={0.5} />
               {/* <spotLight position={[10, 10, 10]} intensity={1} />  */}
-              {/* <spotLight
+            {/* <spotLight
                 position={[10, 50, 50]}
                 intensity={1.2}
                 angle={0.3}
                 penumbra={1}
               />
               <Model */}
-                {/* // path="/Obj8.glb"
+            {/* // path="/Obj8.glb"
                 // path="/EMB_NAIL-KLD-7-1284.glb"
                / */}
-              {/* <OrbitControls minDistance={5} maxDistance={15} /> */}
-              {/* <OrbitControls enableZoom={false} /> */}
-              {/* <Environment preset="sunset" />
+            {/* <OrbitControls minDistance={5} maxDistance={15} /> */}
+            {/* <OrbitControls enableZoom={false} /> */}
+            {/* <Environment preset="sunset" />
             </Canvas> */}
           </div>
 
@@ -262,7 +323,13 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
+        <div className={styles.sivagalai_map_container}>
+          <img
+            src={Assets.sivagalai_map}
+            alt="sivagalai map"
+            className={styles.sivagalai_map}
+          />
+        </div>
         <div className={styles.sivagalai_content}>
           <h1>சிவகலை</h1>
           <p>
@@ -274,7 +341,13 @@ const HomePage = () => {
 
         <div className={styles.model3_content}>
           <div className={styles.model3_img}>
-          <Babylon modelPath="EMB_KDG-1-KNIFE-SL3.glb" scale={0.7} canvasClassName={styles.model3}  minZoom={4} maxZoom={8} />
+            <Babylon
+              modelPath="EMB_KDG-1-KNIFE-SL3.glb"
+              scale={0.7}
+              canvasClassName={styles.model3}
+              minZoom={4}
+              maxZoom={8}
+            />
             {/* <Canvas
               className={styles.model3}
               camera={{ position: [1, 1, 50], fov: 80 }}
@@ -292,9 +365,9 @@ const HomePage = () => {
                 position={[1, -2, 1]}
               />
               {/* <OrbitControls minDistance={5} maxDistance={15} /> */}
-              {/* <OrbitControls enableZoom={false} />
+            {/* <OrbitControls enableZoom={false} />
               <Environment preset="sunset" />
-            </Canvas> */} 
+            </Canvas> */}
           </div>
 
           <div className={styles.model3_content_text}>
@@ -317,15 +390,36 @@ const HomePage = () => {
                 <h2>750+</h2>
                 <p>மட்பாண்ட பொருட்கள்</p>
               </div>
+              <div className={styles.important_findings_items}>
+                <h2>80+</h2>
+                <p>
+                  இரும்பு பொருட்கள் (கத்திகள், அம்பு முனைகள், மோதிரங்கள்,
+                  உளிகள், கோடாரிகள், வாட்கள்)
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className={styles.findings_below_container}>
+        {/* <div className={styles.findings_below_container}>
           <img
             src={Assets.findings_below}
             alt="findings below image"
             className={styles.findings_below}
+          />
+        </div> */}
+        <div className={styles.view360deg_container}>
+          <img
+            src={view360deg}
+            alt=" view 360 image"
+            className={styles.view360deg}
+          />
+        </div>
+        <div className={styles.korkai_map_container}>
+          <img
+            src={Assets.korkai_map}
+            alt=" korkai map image"
+            className={styles.korkai_map}
           />
         </div>
 
@@ -350,7 +444,13 @@ const HomePage = () => {
 
         <div className={styles.model4_content}>
           <div className={styles.model4}>
-          <Babylon modelPath="/EMB_KDG-3-URN92-SL5.glb" scale={.5} canvasClassName={styles.BabylonCanvas}  minZoom={4} maxZoom={8}/>
+            <Babylon
+              modelPath="/EMB_KDG-3-URN92-SL5.glb"
+              scale={0.5}
+              canvasClassName={styles.BabylonCanvas}
+              minZoom={4}
+              maxZoom={8}
+            />
             {/* <Canvas
               className={styles.model4}
               camera={{ position: [0, 0, 50], fov: 800 }}
@@ -416,15 +516,27 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <div className={styles.view360deg_container}>
+        {/* <div className={styles.view360deg_container}>
           <img
             src={view360deg}
             alt=" view 360 image"
             className={styles.view360deg}
           />
+        </div> */}
+
+        <div className={styles.end}>
+          <p>
+            யாதும் இத்தகைய தொழில்நுட்பமும், சங்க இலக்கியங்களில் போற்றப்பட்ட
+            துறைமுகமும், கடல் வணிகமும், வெளிநாட்டு தொடர்பும், அப்போது இருந்த
+            பொருநை ஆற்றங்கரை எத்துனை செம்மையாக இருந்திருக்கும்!
+            <br />
+            <span>யாதும் ஊரே யாவரும் கேளிர் </span>
+            <br />
+            என்ற கனியன் பூங்குன்றனாரின் கவிதை கூட பொருநை ஆற்றங்கரையை
+            எடுத்துக்காட்டாக வைத்து எழுதப்பட்டது போலும்.
+          </p>
         </div>
       </div>
-     
     </div>
   );
 };
