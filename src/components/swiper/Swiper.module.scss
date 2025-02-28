@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    height: 80vh;
 
     .carousel_content_text {
       max-width: 545px;
@@ -161,6 +162,7 @@
       }
     }
     .carousel_content {
+      height: 50vh;
       margin-top: 55px;
       display: flex;
       flex-direction: column;
@@ -194,7 +196,7 @@
           color: #1c1818;
         }
       }
-      .selectedContent_image{
+      .selectedContent_image {
         max-width: 282px;
         width: 100%;
       }

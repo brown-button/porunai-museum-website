@@ -1,3 +1,32 @@
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.7;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes moveDownUp {
+  from {
+    transform: translateY(60px); /* Start from above */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Return to original position */
+    opacity: 1;
+  }
+}
 @media (min-width: 1441px) {
   .main {
     width: 100%;
@@ -22,7 +51,6 @@
     z-index: 10;
     position: relative;
     background-repeat: no-repeat;
-    // animation: fadeIn 1.5s ease-out forwards;
   }
 
   .titile_container {
@@ -91,6 +119,7 @@
     // bottom: 424px;
     bottom: 654px;
     background: transparent;
+    z-index: 1;
 
     p {
       font-family: Avenir;
@@ -151,7 +180,7 @@
   .model1_container {
     margin-top: 100px;
     background: url(../../assets//icons/model1_hiddenbg.svg);
-    height: 100vh;
+    // height: 100vh;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 300px;
@@ -220,16 +249,68 @@
   }
 
   .irumbin_container {
-    background: url(../../assets/icons/irumbin_bg.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 821px;
+    // background: url(../../assets/icons/irumbin_bg.svg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // height: 821px;
+    // max-width: 1440px;
+    // width: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin-bottom: 100px;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
     max-width: 1440px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // margin-bottom: 100px;
+
+    img {
+      animation: rotateImage 2s linear infinite;
+      background: transparent;
+    }
+
+    .panpaadu1 {
+      // max-width: 77px;
+      // width: 100%;
+      position: absolute;
+      top: 0;
+    }
+    .panpaadu2 {
+      // max-width: 104px;
+      // width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      background: transparent;
+    }
+    .panpaadu3 {
+      // max-width: 104px;
+      // width: 100%;
+      position: absolute;
+      right: 100px;
+      bottom: 0;
+    }
+    .panpaadu4 {
+      // max-width: 104px;
+      // width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      // height: 461px;
+    }
+    .panpaadu5 {
+      position: absolute;
+      // max-width: 48px;
+      // width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+    .panpaadu6 {
+      position: absolute;
+      left: 40%;
+    }
 
     p {
       font-family: TAU-Nilavu;
@@ -241,34 +322,42 @@
       text-align: center;
       color: #8f6f44;
       background: transparent;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 933px;
+      width: 100%;
     }
   }
 
-  .velan_panpaadu {
-    background-image: url(../../assets//icons/velan_bg.svg);
-    display: flex;
-    justify-content: space-around;
-    background-repeat: no-repeat;
-    padding: 30px;
-    margin-top: 150px;
+  // .velan_panpaadu {
+  //   background-image: url(../../assets//icons/velan_bg.svg);
+  //   display: flex;
+  //   justify-content: space-around;
+  //   background-repeat: no-repeat;
+  //   padding: 30px;
+  //   margin-top: 150px;
 
-    .velan_image {
-      background: transparent;
-    }
-    .velan_slide1 {
-      background: transparent;
-      max-width: 360px;
-    }
-  }
+  //   .velan_image {
+  //     background: transparent;
+  //   }
+  //   .velan_slide1 {
+  //     background: transparent;
+  //     max-width: 360px;
+  //   }
+  // }
 
   .iron_year_container {
-    background-image: url(../../assets/images/iron_year_bg.png);
+    // background-image: url(../../assets/images/iron_year_bg.png);
     height: 700px;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 300px;
     position: relative;
     margin-top: 150px;
+    overflow: hidden;
 
     p {
       max-width: 994px;
@@ -293,6 +382,8 @@
       display: flex;
       top: 210px;
       background: transparent;
+      overflow: hidden;
+      z-index: 1;
 
       // img{
       //   max-width: ;
@@ -305,6 +396,7 @@
       left: 330px;
       bottom: -134px;
       background: transparent;
+      overflow: hidden;
     }
   }
 
@@ -890,6 +982,86 @@
       overflow: hidden;
     }
   }
+  .porunai_naagarigam_container {
+    margin-top: 90px;
+    .naagarigam_titile {
+      margin-left: 200px;
+      max-width: 781px;
+      width: 100%;
+      h1 {
+        font-family: TAU-Nilavu;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 96px;
+        line-height: 72px;
+        letter-spacing: 0%;
+        color: #8f6f44;
+      }
+      p {
+        margin-top: 20px;
+        font-family: Avenir;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1%;
+        color: #1c1818;
+      }
+      ol {
+        font-family: Avenir;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 1%;
+        color: #1c1818;
+      }
+    }
+    .naagarigam_model1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .naagarigam_model1_img {
+      margin-top: 10px;
+      max-width: 700px;
+      width: 100%;
+
+      .model1 {
+        max-width: 700px;
+        width: 100%;
+      }
+    }
+
+    .model3_content_text {
+      width: 256px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      h1 {
+        font-family: TAU-Paalai;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #8f6a44;
+      }
+      p {
+        font-family: Satoshi;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        color: #8f6a44;
+      }
+    }
+  }
   .end {
     padding: 0px 30px;
 
@@ -901,7 +1073,7 @@
 
     p {
       max-width: 1100px;
-      font-family: Avenir;
+      font-family: TAU-Nilavu;
       font-weight: 400;
       font-style: italic;
       font-size: 32px;
@@ -910,13 +1082,40 @@
       color: #221a0e;
 
       span {
-        font-family: TAU-Nilavu Bold;
+        font-family: TAU-Nilavu;
         font-weight: 700;
         font-style: italic;
         font-size: 96px;
         line-height: 100px;
         letter-spacing: 1%;
       }
+    }
+  }
+  .credits {
+    margin-top: 70px;
+    max-width: 1440px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    h1 {
+      font-family: TAU-Nilavu;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 36px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #8f6a44;
+    }
+    p {
+      font-family: TAU-Nilavu;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 32px;
+      line-height: 60px;
+      letter-spacing: 1%;
+      color: #221a0e;
+      text-align: center;
     }
   }
 }
@@ -1102,6 +1301,7 @@
         place-content: center;
         // background-color: red;
         height: 200px;
+        max-width: 72px;
 
         .knife {
           max-width: 72px;
@@ -1152,16 +1352,46 @@
       }
     }
     .irumbin_container {
-      background: url(../../assets/icons/irumbin_bg.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
+      // background: url(../../assets/icons/irumbin_bg.svg);
+      // background-size: contain;
+      // background-repeat: no-repeat;
       height: 300px;
       max-width: 373.94085693359375px;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: auto;
       // margin-bottom: 100px;
+      .panpaadu1 {
+        width: 40px;
+        left: 40%;
+        top: 10%;
+        height: 103px;
+      }
+      .panpaadu2 {
+        width: 27px;
+        height: 169px;
+      }
+      .panpaadu3 {
+        width: 27px;
+        height: 169px;
+      }
+      .panpaadu4 {
+        width: 27px;
+        height: 119px;
+        right: 20%;
+      }
+      .panpaadu5 {
+        width: 55px;
+        height: 65px;
+        bottom: 50%;
+      }
+      .panpaadu6 {
+        width: 60px;
+        height: 77px;
+        left: 0;
+      }
 
       p {
         font-family: TAU-Nilavu;
@@ -1177,26 +1407,26 @@
       }
     }
 
-    .velan_panpaadu {
-      background-image: url(../../assets//icons/velan_bg.svg);
-      display: flex;
-      background-size: contain;
-      justify-content: space-around;
-      background-repeat: no-repeat;
-      padding: 30px;
-      margin-top: 20px;
+    // .velan_panpaadu {
+    //   background-image: url(../../assets//icons/velan_bg.svg);
+    //   display: flex;
+    //   background-size: contain;
+    //   justify-content: space-around;
+    //   background-repeat: no-repeat;
+    //   padding: 30px;
+    //   margin-top: 20px;
 
-      .velan_image {
-        max-width: 137px;
-        max-height: 270px;
-        background: transparent;
-      }
-      .velan_slide1 {
-        max-width: 99.72496032714844px;
-        max-height: 106px;
-        background: transparent;
-      }
-    }
+    //   .velan_image {
+    //     max-width: 137px;
+    //     max-height: 270px;
+    //     background: transparent;
+    //   }
+    //   .velan_slide1 {
+    //     max-width: 99.72496032714844px;
+    //     max-height: 106px;
+    //     background: transparent;
+    //   }
+    // }
 
     .iron_year_container {
       display: flex;
@@ -1880,8 +2110,85 @@
         }
       }
     }
+    .porunai_naagarigam_container {
+      padding: 20px;
+      margin-top: 70px;
+      .naagarigam_titile {
+        margin-left: 0;
+        max-width: 781px;
+        width: 100%;
+        h1 {
+          font-family: TAU-Nilavu;
+          font-weight: 700;
+          font-style: italic;
+          font-size: 40px;
+          line-height: 46px;
+          letter-spacing: 0%;
+          color: #8f6f44;
+        }
+        p {
+          margin-top: 20px;
+          font-family: Avenir;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 24px;
+          line-height: 38px;
+          letter-spacing: 1%;
+          color: #1c1818;
+        }
+        ol {
+          font-family: Avenir;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 24px;
+          line-height: 38px;
+          letter-spacing: 1%;
+          color: #1c1818;
+        }
+      }
+
+      .naagarigam_model1_img {
+        margin-top: 10px;
+        max-width: 700px;
+        width: 100%;
+
+        .model1 {
+          max-width: 700px;
+          width: 100%;
+        }
+      }
+
+      .model3_content_text {
+        width: 256px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        h1 {
+          font-family: TAU-Paalai;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 20px;
+          line-height: 16px;
+          letter-spacing: 0%;
+          text-align: center;
+          color: #8f6a44;
+        }
+        p {
+          font-family: Satoshi;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21.6px;
+          letter-spacing: 0%;
+          text-decoration: underline;
+          text-decoration-style: solid;
+          color: #8f6a44;
+        }
+      }
+    }
     .end {
-      padding: 0px 30px;
+      padding: 0px 50px;
 
       width: 100%;
       margin-top: 50px;
@@ -1891,22 +2198,48 @@
 
       p {
         max-width: 1100px;
-        font-family: Avenir;
+        font-family: TAU-Nilavu;
         font-weight: 400;
         font-style: italic;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 30px;
         letter-spacing: 1%;
         color: #221a0e;
 
         span {
-          font-family: TAU-Nilavu Bold;
+          font-family: TAU-Nilavu;
           font-weight: 700;
           font-style: italic;
           font-size: 46px;
           line-height: 50px;
           letter-spacing: 1%;
         }
+      }
+    }
+    .credits {
+      margin-top: 60px;
+      max-width: 1440px;
+      width: 100%;
+
+      h1 {
+        font-family: TAU-Nilavu;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 26px;
+        line-height: 60px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #8f6a44;
+      }
+      p {
+        font-family: TAU-Nilavu;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1%;
+        color: #221a0e;
+        text-align: center;
       }
     }
   }

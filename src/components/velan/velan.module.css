@@ -1,0 +1,90 @@
+.velan_panpaadu {
+  /* background-image: url(../../assets//icons/velan_bg.svg); */
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-repeat: no-repeat;
+  padding: 30px;
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 200px;
+  /* overflow: hidden; */
+
+  .velan_image {
+    max-width: 400px;
+    width: 100%;
+    background: transparent;
+  }
+
+  .slideContainer {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px;  */
+    row-gap: 204px;
+    overflow-y: auto;
+    overflow: hidden;
+  }
+
+  .velan_slide {
+    background: transparent;
+    max-width: 360px;
+    width: 100%;
+  }
+  .slideText {
+    font-family: Avenir;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #1c1818;
+  }
+
+  &.active {
+    .velan_image {
+      position: sticky;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .velan_panpaadu {
+    margin-top: 40px;
+    margin-bottom: 55px;
+    .velan_image {
+      max-width: 137px;
+      max-height: 270px;
+      background: transparent;
+    }
+
+    .velan_slide {
+      max-width: 99.72px;
+      max-height: 106px;
+      background: transparent;
+    }
+
+    .slideContainer {
+      row-gap: 40px;
+      margin-top: 51px;
+    }
+
+    .slideText {
+      font-family: Avenir;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 10px;
+      line-height: 13.3px;
+      letter-spacing: 1%;
+      text-align: center;
+    }
+    &.active {
+      .velan_image {
+        position: sticky;
+        top: 0;
+      }
+    }
+  }
+}

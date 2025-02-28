@@ -30,6 +30,12 @@ import korkai_map from "../assets/icons/korkai_map.svg"
 import adichanallur_map from "../assets/icons/adichanallur_map.svg"
 import sivagalai_map from "../assets/icons/sivagalai_map.svg"
 import than_porunai_img from "../assets/icons/than_porunai_img.svg"
+import panpaadu1 from "../assets/icons/1233 1.svg"
+import panpaaadu2 from "../assets/icons/1233 2.svg"
+import panpaadu3 from "../assets/icons/1233 3.svg"
+import panpaadu4 from "../assets/icons/1233 4.svg"
+import panpaadu5 from "../assets/icons/1233 5.svg"
+import panpaadu6 from "../assets/icons/1233 6.svg"
 
 const Assets = {
     tn_logo,
@@ -63,7 +69,13 @@ const Assets = {
     korkai_map,
     adichanallur_map,
     sivagalai_map,
-    than_porunai_img
+    than_porunai_img,
+    panpaadu1,
+    panpaaadu2,
+    panpaadu3,
+    panpaadu4,
+    panpaadu5,
+    panpaadu6
 
 };
 

@@ -1,13 +1,11 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
 import { Assets } from "utils/imports.utils";
 import styles from "./HomePage.module.scss";
-import Model from "../modelview/model";
 import TimelineCarousel from "components/swiper/Swiper.component";
 import Adichanallur_beta from "../../assets/images/Adichanallur - Burial.png";
-import view360deg from "../../assets/images/360_Image.jpg";
 import Babylon from "screens/Babylon/Babylon";
 import { useEffect, useRef, useState } from "react";
+import VelanPanpaadu from "components/velan/velan.panpadu";
+import PhotoSphereViewer from "components/photoSphereViewer/Photo.component";
 
 const HomePage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -15,11 +13,13 @@ const HomePage = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
+      console.log(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div className={styles.main}>
       <div className={styles.home_container}>
@@ -137,10 +137,40 @@ const HomePage = () => {
         </div>
 
         <div className={styles.irumbin_container}>
+          <img
+            src={Assets.panpaadu1}
+            alt="image"
+            className={styles.panpaadu1}
+          />
+          <img
+            src={Assets.panpaaadu2}
+            alt="image"
+            className={styles.panpaadu2}
+          />
+          <img
+            src={Assets.panpaadu3}
+            alt="image"
+            className={styles.panpaadu3}
+          />
+          <img
+            src={Assets.panpaadu4}
+            alt="image"
+            className={styles.panpaadu4}
+          />
+          <img
+            src={Assets.panpaadu5}
+            alt="image"
+            className={styles.panpaadu5}
+          />
+          <img
+            src={Assets.panpaadu6}
+            alt="image"
+            className={styles.panpaadu6}
+          />
           <p>இரும்பின் பயன்பாடு</p>
         </div>
 
-        <div className={styles.velan_panpaadu}>
+        {/* <div className={styles.velan_panpaadu}>
           <img
             src={Assets.velan_img}
             alt="velan image"
@@ -150,8 +180,10 @@ const HomePage = () => {
             src={Assets.velan_sli1}
             alt="velan slide"
             className={styles.velan_slide1}
+            
           />
-        </div>
+        </div> */}
+        <VelanPanpaadu />
 
         <div className={styles.iron_year_container}>
           <div className={styles.iron_year_ptag}>
@@ -409,12 +441,14 @@ const HomePage = () => {
           />
         </div> */}
         <div className={styles.view360deg_container}>
-          <img
+          {/* <img
             src={view360deg}
             alt=" view 360 image"
             className={styles.view360deg}
-          />
+          /> */}
+          <PhotoSphereViewer className={styles.view360deg} />
         </div>
+
         <div className={styles.korkai_map_container}>
           <img
             src={Assets.korkai_map}
@@ -524,6 +558,53 @@ const HomePage = () => {
           />
         </div> */}
 
+        <div className={styles.porunai_naagarigam_container}>
+          <div className={styles.naagarigam_titile}>
+            <h1>பொருநை நாகரீகம்</h1>
+            <p>
+              இவை அனைத்தும் ஒரு மேம்பட்ட நாகரீகத்தையே குறிக்கின்றன. உலகில்
+              இரண்டுவகையான இரும்புகள் பயன்பாட்டிலிருந்தன:
+            </p>
+            <ol>
+              <li>விண்கல் இரும்பு</li>
+              <li>இரும்பு தாது உருக்கி செய்யப்பட்ட இரும்பு</li>
+            </ol>
+          </div>
+          <div className={styles.naagarigam_model1}>
+            <div className={styles.naagarigam_model1_img}>
+              <Babylon
+                modelPath="/EMB_IRON-DAGGER-KLD-3233.glb"
+                scale={0.3}
+                canvasClassName={styles.model1}
+                minZoom={4}
+                maxZoom={8}
+              />
+            </div>
+
+            <div className={styles.model3_content_text}>
+              <h1>பண்டைய பானை</h1>
+              <p>VIEW IN AR</p>
+            </div>
+          </div>
+          {/* <div className={styles.naagarigam_model2}>
+          <div className={styles.naagarigam_model2_img}>
+            <Babylon
+              modelPath="/EMB_IRON-RING-KLD-4-3208.glb"
+              scale={0.3}
+              canvasClassName={styles.model2}
+              minZoom={4}
+              maxZoom={8}
+            />
+          </div>
+
+          <div className={styles.model3_content_text}>
+            <h1>பண்டைய பானை</h1>
+            <p>VIEW IN AR</p>
+          </div>
+            
+            <p>பொருநை சுற்றியுள்ள பகுதிகளில் இரும்பு தாதுக்கள் அதிகம் காணப்படுகின்றன. ஆனால், அத்தாதுக்களை கருவியாக மாற்ற உயர் தொழில்நுட்பம் தேவை. கி.மு. 4000 ஆண்டுகளிலேயே இத்தகைய தொழில்நுட்ப வளர்ச்சி இங்கு இருந்துள்ளது என்பதே மிகப்பெரிய பெருமை.</p>
+          </div> */}
+        </div>
         <div className={styles.end}>
           <p>
             யாதும் இத்தகைய தொழில்நுட்பமும், சங்க இலக்கியங்களில் போற்றப்பட்ட
@@ -535,6 +616,11 @@ const HomePage = () => {
             என்ற கனியன் பூங்குன்றனாரின் கவிதை கூட பொருநை ஆற்றங்கரையை
             எடுத்துக்காட்டாக வைத்து எழுதப்பட்டது போலும்.
           </p>
+        </div>
+
+        <div className={styles.credits}>
+          <h1>இந்த புத்தகம் ஒரு டெமோ ஆகும்</h1>
+          <p>இது Brown Button Technologies Pvt. Ltd. உருவாக்கியது.</p>
         </div>
       </div>
     </div>
