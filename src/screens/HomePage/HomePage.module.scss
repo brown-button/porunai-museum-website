@@ -171,23 +171,29 @@
       // display: grid;
       // place-content: center;
       // background-color: red;
-      height: 600px;
-      width: 200px;
+      transform: rotate(20deg); /* Rotates the container by 45 degrees */
+      margin-top: -100px; /* Adjust the value as needed */
+      margin-left: 000px;
+      height: 900px;
+      width: 300px;
 
       .knife {
         // margin-top: 10px;
         // height: fit-content;
-        height: 600px;
-        max-width: 200px;
+        height: 900px;
+        max-width: 300px;
+        margin-left: 0px;
       }
     }
     .rotate_container {
+      margin-left: 00px;
       display: flex;
       flex-direction: column;
       align-items: center;
       row-gap: 20px;
     }
     .heading {
+      margin-left: 50px;
       width: 256px;
       font-family: TAU-Paalai;
       font-weight: 400;
@@ -199,6 +205,7 @@
       color: #8f6f44;
     }
     .heading span {
+      margin-left: 50;
       font-family: Satoshi;
       font-weight: 400;
       font-size: 16px;
@@ -208,6 +215,7 @@
       color: #8f6a44;
     }
     .content2_description {
+      margin-left: 100px;
       width: 476px;
       font-family: Avenir;
       font-weight: 400;
@@ -406,33 +414,39 @@
   }
 
   .pot_model_container {
-    margin-top: 150px;
+    margin-top: -350px;
     width: 100%;
     display: flex;
     justify-content: space-around;
 
     .porunai_book {
+     
       max-width: 534px;
-      width: 100%;
+      width: 200%;
       display: flex;
-      margin-left: 200px;
+      margin-left: 0px;
     }
 
     .pot_content {
       // display: flex;
       // flex-direction: row;
       // align-items: flex-end;
-      width: 505px;
-      margin-top: 300px;
+      
+      width: 1500px;
+      margin-top: 450px;
+      margin-left: -350px;
+      
+      
 
       .pot {
-        width: 505px;
+        width: 1200px;
         // height: 571px;
       }
       .pot_content_text {
         display: flex;
         flex-direction: column;
-        width: 200px;
+        margin-left: 270px;
+        width: 650px;
         align-items: center;
 
         h1 {
@@ -472,16 +486,21 @@
     }
   }
   .old_iron_model_container {
+    
     display: flex;
     justify-content: center;
     position: relative;
+    
+  
 
     .iron_model {
-      max-width: 900px;
-      width: 100%;
-      height: 790px;
+      position: relative;
+      bottom: 100px;
+      max-width: 1200px;
+      width: 75%;
+      height: 1053px;
       .iron {
-        height: 100%;
+        height: 75%;
       }
     }
 
@@ -493,8 +512,8 @@
       align-items: center;
       gap: 10px;
       position: absolute;
-      bottom: 250px;
-      right: 60px;
+      bottom: 300px;
+      right: 600px;
       background: transparent;
       h1 {
         font-family: TAU-Paalai;
@@ -522,7 +541,7 @@
   .beta_container {
     display: flex;
     justify-content: space-around;
-    margin-top: 106px;
+    margin-top: -150px;
     margin-bottom: -520px;
     background: transparent;
     position: relative;
@@ -623,13 +642,16 @@
   .model3_content {
     // height: 700px;
     position: relative;
+    margin-left: -250px;
+    height: 700px;
+    width: 1500px;
     display: flex;
     justify-content: flex-end;
     margin-right: 25px;
     .model3_img {
-      max-width: 704px;
+      max-width: 1000px;
       width: 100%;
-      height: 700px;
+      height: 500px;
     }
     .model3_content_text {
       width: 256px;
@@ -641,8 +663,8 @@
       // bottom: 250px;
       // left: 300px;
 
-      top: 50%;
-      left: 60%;
+      top:  80%;
+      left: 65%;
       transform: translate(-50%, -50%);
       background: transparent;
       h1 {
@@ -672,7 +694,8 @@
     justify-content: end;
     padding: 0px 50px;
     .important_findings_container {
-      // margin-left: 598px;
+      position: relative;
+      // margin-left: 598px;  
       max-width: 767px;
       width: 100%;
       h1 {
@@ -688,7 +711,7 @@
       .important_findings_text {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 0px;
 
         .important_findings_items {
           max-width: 305px;
@@ -739,7 +762,7 @@
     }
   }
   .korkai_text_content {
-    margin-top: 80px;
+    margin-top: 20px;
     width: 648px;
     margin-left: 159px;
     h1 {
@@ -786,16 +809,18 @@
   }
 
   .model4_content {
-    margin-top: 200px;
-    margin-right: 10px;
-    // height: 700px;
+    margin-top: 100px;
+
+    margin-right: 30px;
+    height: 700px;
     position: relative;
     margin-bottom: 45px;
     display: flex;
     justify-content: flex-end;
     .model4 {
-      max-width: 700px;
-      width: 100%;
+      //max-height: 100px;
+      //max-width: 800px;
+      width: 800px;
       // position: absolute;
       // top: -200px;
     }
@@ -806,8 +831,8 @@
       align-items: center;
       gap: 10px;
       position: absolute;
-      bottom: 250px;
-      left: 513px;
+      bottom:  800px;
+      left: 875px;
 
       h1 {
         font-family: TAU-Paalai;

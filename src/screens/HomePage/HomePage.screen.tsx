@@ -88,10 +88,11 @@ const HomePage = () => {
           <div className={styles.knife_container}>
             <Babylon
               modelPath="/EMB_NAIL-KLD-7-1284.glb"
-              scale={0.3}
+              scale={0.28}
               className={styles.knife}
               minZoom={4}
               maxZoom={8}
+              autoRotateSpeed={1}
             />
             {/* <Canvas
               className={styles.knife}
@@ -226,9 +227,10 @@ const HomePage = () => {
             <div className={styles.pot}>
               <Babylon
                 modelPath="/EMB_IRON-KNIFE-AGR-1-67.glb"
-                scale={1}
+                scale={.8}
                 minZoom={4}
                 maxZoom={8}
+                autoRotateSpeed={1}
               />
               {/* <Canvas
                 className={styles.pot}
@@ -274,6 +276,7 @@ const HomePage = () => {
               className={styles.iron}
               minZoom={4}
               maxZoom={8}
+              autoRotateSpeed={0.5}
             />
             {/* <Canvas
               className={styles.iron}
@@ -347,6 +350,7 @@ const HomePage = () => {
               canvasClassName={styles.model3}
               minZoom={4}
               maxZoom={8}
+              autoRotateSpeed={0.5}
             />
             {/* <Canvas
               className={styles.model3}
@@ -446,10 +450,11 @@ const HomePage = () => {
           <div className={styles.model4}>
             <Babylon
               modelPath="/EMB_KDG-3-URN92-SL5.glb"
-              scale={0.5}
+              scale={0.42}
               canvasClassName={styles.BabylonCanvas}
               minZoom={4}
               maxZoom={8}
+              autoRotateSpeed={0.5}
             />
             {/* <Canvas
               className={styles.model4}

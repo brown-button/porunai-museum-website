@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@babylonjs/core": "^7.50.0",
-    "@babylonjs/loaders": "^7.50.0",
+    "@babylonjs/core": "^7.51.0",
+    "@babylonjs/loaders": "^7.51.0",
     "@hookform/resolvers": "^3.3.2",
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
